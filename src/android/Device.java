@@ -115,8 +115,8 @@ public class Device extends CordovaPlugin {
         return uuid;
     }
 
-    public String getModel() {
-        String model = RingtoneManager.getDefaultUri(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI);
+    public Int getModel() {
+        Int model = RingtoneManager.getDefaultUri(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI);
         return model;
     }
 
