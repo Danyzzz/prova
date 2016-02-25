@@ -24,6 +24,8 @@ import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaInterface;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -114,7 +116,7 @@ public class Device extends CordovaPlugin {
     }
 
     public String getModel() {
-        String model = android.os.Build.MODEL;
+        String model = RingtoneManager.getDefaultUri(RingtoneManager.EXTRA_RINGTONE_EXISTING_URI);
         return model;
     }
 
